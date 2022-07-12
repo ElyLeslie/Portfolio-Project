@@ -1,0 +1,48 @@
+:root {
+    --back-color: rgb(29, 143, 143);
+}
+
+
+
+header {background-color: var(--back-color)
+
+}
+header ul li {
+    display: inline;
+    font-size: 4.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+} 
+
+
+.little-boys img{
+    width: 50%;
+}
+
+
+span[data-vtuber] {
+    position: relative;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+  }
+  
+  span[data-vtuber]:hover::after {
+  content: attr(data-vtuber);
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  min-width: 300px;
+  border: purple;
+  border-width: 10px;
+  border-radius: 3px;
+  background-color: dimgray;
+  color: white;
+  font-size: 80%;
+  z-index: 1;
+    
+  }
+  
