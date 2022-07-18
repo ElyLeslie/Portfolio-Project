@@ -1,31 +1,182 @@
 :root {
     --back-color: rgb(29, 143, 143);
+    --insides: rgb(60, 223, 223);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {background-color: var(--back-color);
+
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
 }
 
 
+nav ul li {
+    background-color: beige;
+    padding: 1%;
+    border-radius: 40px;
+}
 
-header {background-color: var(--back-color)
+nav ul li:hover {
+    background-color: rgb(66, 66, 66);
+    padding: 1%;
+    border-radius: 30px;
+    color: white;
+}
+
+header h1 {
+    font-size: 5em;
+    text-align: center;
 
 }
+body{
+    background-color: var(--insides);
+    
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+      
+}
+
 header ul li {
     display: inline;
     font-size: 4.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 25px;
+    
+    
 }
+
+.big-boy h2 {
+    font-size: 3em;
+    
+    width: 20%;
+    
+    margin: 24px 0 24px 0;
+}
+
+
+
+
+figcaption {
+    
+    
+    
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 100x;
+    background-color: var(--back-color);
+}
+
+
 
 a {
     text-decoration: none;
 } 
 
+.big-boy img
+{
+    width: 100%;
+    height: 400px;
+}
 
 .little-boys img{
+    width: 40%;
+}
+
+.Contacts img {
+    height: 150px;
+    max-width: 200px;
+}
+
+
+
+.little-boys {
+    display: flex;
+    justify-content: flex-start;
+    border: 2px solid; 
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--insides);
+    
+}
+
+.Work {
+    background-color: var(--insides);
+}
+
+.Work figcaption {
+    width: 80%;
+    background-color: var(--insides);
+}
+
+.About 
+
+{
+
+    background-color: var(--insides);
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+
+.About img {
+    height: 150px;
+    width: 200px;
+    
+}
+
+ .About figcaption
+{
+    width: 100%;
+    background-color: var(--insides);
+    
+}
+.About h2, .Contacts h2 {
+    font-size: 50px;
+    margin-bottom: 24px;
     width: 50%;
 }
+.Contacts, .Contacts figcaption {
+    background-color: var(--insides);
+}
+
+.Contacts img {
+    height: 150px;
+    width: 250px;
+}
+
+
+.Contacts figcaption {
+
+    width: 90%;
+
+
+}
+
+
+
 
 
 span[data-vtuber] {
     position: relative;
     text-decoration: underline;
+    
     color: blue;
     cursor: pointer;
   }
@@ -33,7 +184,7 @@ span[data-vtuber] {
   span[data-vtuber]:hover::after {
   content: attr(data-vtuber);
   position: absolute;
-  top: 24px;
+  bottom: 24px;
   left: 0px;
   min-width: 300px;
   border: purple;
@@ -45,4 +196,37 @@ span[data-vtuber] {
   z-index: 1;
     
   }
+
+
+  footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center; 
+    background-color: var(--back-color);
+    padding: 20px;
+     }
+
+
+footer h2 {
+        font-size: 20px;
+    }
   
+  @media screen and (max-width: 768px) {
+    main,
+    nav,
+    .big-image,
+     figcaption {
+      flex-direction: column;
+
+    }
+    .About img {
+        height: 100px;
+        max-width: 250px;
+        
+    }
+    nav ul li {
+        font-size: 45px;
+    }
+    
+  }
